@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrações em Pedorido</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f3e9;
+        }
+        
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .shadow-azulejo {
+            box-shadow: 8px 8px 0px #c81d25;
+        }
+        
+        .transition-slow {
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://www.cm-castelo-paiva.pt/media/image_manager/pedorido_logotipo.jpg" alt="Pedorido Logo" class="h-16 mr-2">
+                <a href="index.html" class="playfair text-2xl font-bold text-red-700">Pedorido</a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html#home" class="hover:text-red-700 transition-slow">Início</a>
+                <a href="index.html#about" class="hover:text-red-700 transition-slow">Sobre</a>
+                <a href="index.html#attractions" class="hover:text-red-700 transition-slow">Atrações</a>
+                <a href="index.html#gastronomy" class="hover:text-red-700 transition-slow">Gastronomia</a>
+                <a href="index.html#contact" class="hover:text-red-700 transition-slow">Contactos</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-red-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4">
+            <a href="index.html#home" class="block py-2 hover:text-red-700">Início</a>
+            <a href="index.html#about" class="block py-2 hover:text-red-700">Sobre</a>
+            <a href="index.html#attractions" class="block py-2 hover:text-red-700">Atrações</a>
+            <a href="index.html#gastronomy" class="block py-2 hover:text-red-700">Gastronomia</a>
+            <a href="index.html#contact" class="block py-2 hover:text-red-700">Contactos</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h1 class="playfair text-4xl font-bold text-red-700 mb-4"> Atrações de Pedorido</h1>
+                <div class="w-24 h-1 bg-red-700 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Attraction 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-slow">
+                    <img src="https://s2.wklcdn.com/image_338/10156239/142706668/90308513.400x300.jpg" alt="Zona de Lazer do Choupal" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="playfair text-2xl font-bold mb-3">Zona de Lazer do Choupal</h3>
+                        <p class="mb-4">Área de lazer fluvial com bar, esplanada, parque de merendas e infantil, num cenário deslumbrante na foz do Rio Arda.</p>
+                        <div class="flex justify-between items-center">
+                            
+                            <button class="text-red-700 font-semibold hover:underline saiba-mais bg-transparent border-none cursor-pointer p-0"
+                               data-title="Zona de Lazer do Choupal" 
+                               data-image="https://s2.wklcdn.com/image_338/10156239/142706668/90308513.400x300.jpg" 
+                               data-description="A Zona de Lazer do Choupal em Pedorido é uma área fluvial no Rio Douro, na foz do Rio Arda. Oferece um bar com esplanada, WC, parque de merendas com churrasqueira, parque infantil e estacionamento, tudo num cenário deslumbrante. Local ideal para piqueniques e momentos de lazer em família.">
+                                Saiba mais <span class="inline-block transform hover:translate-x-1 transition-transform">→</span>
+                            </button>
+</div>
+                    </div>
+                </div>
+                
+                <!-- Attraction 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-slow">
+                    <img src="https://farm4.staticflickr.com/3115/2327441066_cb106f01ae_b.jpg" alt="Igreja Matriz" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="playfair text-2xl font-bold mb-3">Igreja Matriz</h3>
+                        <p class="mb-4">Igreja paroquial revivalista neogótica do século XX, com arquitetura religiosa de planta composta por nave, capela-mor e torre sineira.</p>
+                        <div class="flex justify-between items-center">
+                            
+                            <button class="text-red-700 font-semibold hover:underline saiba-mais bg-transparent border-none cursor-pointer p-0"
+                               data-title="Igreja Matriz" 
+                               data-image="https://farm4.staticflickr.com/3115/2327441066_cb106f01ae_b.jpg" 
+                               data-description="A Igreja Matriz de Pedorido é um exemplar revivalista neogótico do século XX. Sua arquitetura religiosa apresenta nave, capela-mor, sacristia e torre sineira. O interior possui cobertura em madeira e é iluminado por janelas bilaterais. Um marco histórico e religioso da comunidade.">
+                                Saiba mais <span class="inline-block transform hover:translate-x-1 transition-transform">→</span>
+                            </button>
+</div>
+                    </div>
+                </div>
+                
+                <!-- Attraction 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-slow">
+                    <img src="https://payvape.pt/wp-content/uploads/2021/05/8-4.jpg" alt="Aldeia de Gaído" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="playfair text-2xl font-bold mb-3">Aldeia de Gaído</h3>
+                        <p class="mb-4">Povoado tradicional que preserva a autenticidade da vida rural portuguesa, com casas características e produtos regionais.</p>
+                        <div class="flex justify-between items-center">
+                            
+                            <button class="text-red-700 font-semibold hover:underline saiba-mais bg-transparent border-none cursor-pointer p-0"
+                               data-title="Aldeia de Gaído" 
+                               data-image="https://payvape.pt/wp-content/uploads/2021/05/8-4.jpg" 
+                               data-description="A Aldeia de Gaído é um povoado tradicional que preserva a autenticidade da vida rural portuguesa. Com casas características e ruas pitorescas, oferece aos visitantes um vislumbre da vida campestre. No centro encontra-se a Capela, testemunho da fé e tradição da comunidade local.">
+                                Saiba mais <span class="inline-block transform hover:translate-x-1 transition-transform">→</span>
+                            </button>
+</div>
+                    </div>
+                </div>
+                <!-- Attraction 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-slow">
+                    <img src="https://scontent.fopo4-1.fna.fbcdn.net/v/t39.30808-6/533098173_1654803762589628_3251729439665827488_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=M6OxHUMVVEQQ7kNvwHAYLYk&_nc_oc=AdnD1l2fsW28qwzbtCckhUSEgVKfCM4B_D4L67zXo5tqVlxmfNLUywvyeBAgRku3htE&_nc_zt=23&_nc_ht=scontent.fopo4-1.fna&_nc_gid=2F38JPKYQcGyskQwCZtqFw&oh=00_AfZZ6ljbspGkTGupIixLvq7zCGqLnDkqfPEzXqU6E87b7w&oe=68E310C7" alt="Miradouro do Rio Douro" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="playfair text-2xl font-bold mb-3">Aldeia da Póvoa</h3>
+                        <p class="mb-4">Aldeia cujo padroeiro é Sto Isidro. Detém a zona industrial das Lavagueiras, um local importante na economia Paivense. </p>
+                        <div class="flex justify-between items-center">
+                            
+                            <button class="text-red-700 font-semibold hover:underline saiba-mais bg-transparent border-none cursor-pointer p-0"
+                               data-title="Aldeia da Póvoa" 
+                               data-image="https://scontent.fopo4-1.fna.fbcdn.net/v/t39.30808-6/533098173_1654803762589628_3251729439665827488_n.jpg" 
+                               data-description="A Aldeia da Póvoa tem como padroeiro Santo Isidro. É conhecida por abrigar a zona industrial das Lavagueiras, um polo importante na economia do concelho de Castelo de Paiva. Mantém tradições rurais e oferece vistas panorâmicas sobre a região.">
+                                Saiba mais <span class="inline-block transform hover:translate-x-1 transition-transform">→</span>
+                            </button>
+</div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                    </div>
+                </div>
+                
+            </div>
+<div class="text-center mt-12">
+                <a href="index.html" class="inline-block border-2 border-red-700 text-red-700 hover:bg-red-700 hover:text-white px-8 py-3 rounded-full font-semibold transition-slow">Voltar à Página Inicial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="playfair text-2xl font-bold mb-4">Pedorido</h3>
+                    <p class="max-w-xs">Descubra a autêntica beleza do Douro nesta joia escondida de Portugal.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="font-bold text-lg mb-4">Explore</h4>
+                        <ul class="space-y-2">
+                            <li><a href="index.html#attractions" class="hover:text-red-300 transition-slow">Atrações</a></li>
+                            <li><a href="index.html#gastronomy" class="hover:text-red-300 transition-slow">Gastronomia</a></li>
+                            <li><a href="#" class="hover:text-red-300 transition-slow">Alojamento</a></li>
+                            <li><a href="#" class="hover:text-red-300 transition-slow">Eventos</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-lg mb-4">Informações</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-red-300 transition-slow">Como chegar</a></li>
+                            <li><a href="#" class="hover:text-red-300 transition-slow">Horários</a></li>
+                            <li><a href="#" class="hover:text-red-300 transition-slow">Preços</a></li>
+                            <li><a href="#" class="hover:text-red-300 transition-slow">Acessibilidade</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-lg mb-4">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-red-300 transition-slow">Termos</a></li>
+                            <li><a href="#" class="hover:text-red-300 transition-slow">Privacidade</a></li>
+                            <li><a href="#" class="hover:text-red-300 transition-slow">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p>© 2023 Pedorido Turismo. Todos os direitos reservados.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-red-300 transition-slow"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-red-300 transition-slow"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-red-300 transition-slow"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-red-300 transition-slow"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Modal functionality
+        const modal = document.getElementById('modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalImage = document.getElementById('modal-image');
+        const modalDescription = document.getElementById('modal-description');
+        const modalClose = document.getElementById('modal-close');
+
+        // Attach click handlers to all "Saiba mais" buttons
+        document.querySelectorAll('.saiba-mais').forEach(button => {
+            button.addEventListener('click', function() {
+                // Get data from data attributes
+                const title = this.dataset.title;
+                const imgSrc = this.dataset.image;
+                const description = this.dataset.description;
+                
+                // Populate modal
+                modalTitle.textContent = title;
+                modalImage.src = imgSrc;
+                modalImage.alt = title;
+                modalDescription.textContent = description;
+                
+                // Show modal
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close modal
+        modalClose.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+    <!-- Modal Popup -->
+    <div id="modal" class="fixed inset-0 z-50 hidden" style="display: none;">
+        <div class="absolute inset-0 bg-black bg-opacity-75"></div>
+        <div class="relative flex items-center justify-center h-full w-full p-4">
+            <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white p-4 border-b flex justify-between items-center">
+                    <h3 id="modal-title" class="playfair text-2xl font-bold"></h3>
+                    <button id="modal-close" class="text-red-700 hover:text-red-900 text-2xl">&times;</button>
+                </div>
+                <div class="p-6">
+                    <img id="modal-image" src="" alt="" class="w-full h-64 md:h-96 object-cover rounded-lg mb-6">
+                    <p id="modal-description" class="text-lg"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
